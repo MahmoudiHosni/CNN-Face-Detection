@@ -28,7 +28,7 @@ def get_data_set(filepath):
     print('Reading files finihsed ')
     return np.asarray(imgs), labels
 
-filepath = ('/home/hosni/Downloads/YALE/faces/')
+filepath = ('/YALE/faces/')
 imgs, labels = get_data_set(filepath)
 labels1=[labels[i][-2:] for i in range(len(labels))]
 X_train, X_test, y_train, y_test = train_test_split(imgs, labels1, test_size =0.2)
